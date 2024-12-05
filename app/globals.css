@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Construction Blue */
+    --primary-50: 210 100% 95%;    /* Lightest blue for subtle backgrounds */
+    --primary-100: 210 95% 90%;    /* Light blue for hover states */
+    --primary-200: 210 90% 85%;    /* Soft blue for inactive states */
+    --primary-300: 210 85% 75%;    /* Medium light blue */
+    --primary-400: 210 80% 65%;    /* Base medium blue */
+    --primary-500: 210 75% 55%;    /* Primary blue */
+    --primary-600: 210 70% 45%;    /* Darker blue for hover */
+    --primary-700: 210 65% 35%;    /* Dark blue for active states */
+    --primary-800: 210 60% 25%;    /* Very dark blue */
+    --primary-900: 210 55% 15%;    /* Darkest blue */
+
+    /* Safety Orange/Red */
+    --destructive-50: 15 100% 95%;
+    --destructive-100: 15 95% 90%;
+    --destructive-200: 15 90% 80%;
+    --destructive-300: 15 85% 70%;
+    --destructive-400: 15 80% 60%;
+    --destructive-500: 15 75% 50%;
+    --destructive-600: 15 70% 40%;
+    --destructive-700: 15 65% 35%;
+    --destructive-800: 15 60% 30%;
+    --destructive-900: 15 55% 25%;
+
+    /* Warning Yellow */
+    --warning-50: 45 100% 95%;
+    --warning-100: 45 95% 90%;
+    --warning-200: 45 90% 80%;
+    --warning-300: 45 85% 70%;
+    --warning-400: 45 80% 60%;
+    --warning-500: 45 75% 50%;
+    --warning-600: 45 70% 40%;
+    --warning-700: 45 65% 35%;
+    --warning-800: 45 60% 30%;
+    --warning-900: 45 55% 25%;
+
+    /* Neutral Grays (with slight blue tint for construction theme) */
+    --neutral-50: 210 20% 98%;
+    --neutral-100: 210 15% 95%;
+    --neutral-200: 210 14% 90%;
+    --neutral-300: 210 13% 83%;
+    --neutral-400: 210 12% 75%;
+    --neutral-500: 210 11% 65%;
+    --neutral-600: 210 10% 45%;
+    --neutral-700: 210 9% 35%;
+    --neutral-800: 210 8% 25%;
+    --neutral-900: 210 7% 15%;
+
+    /* Semantic Colors */
+    --success-50: 160 84% 95%;
+    --success-100: 160 84% 90%;
+    --success-500: 160 84% 40%;
+    --success-900: 160 84% 20%;
+
+    /* Base colors for Shadcn */
+    --background: var(--neutral-50);
+    --foreground: var(--neutral-900);
+    
+    --card: var(--neutral-50);
+    --card-foreground: var(--neutral-900);
+    
+    --popover: var(--neutral-50);
+    --popover-foreground: var(--neutral-900);
+    
+    --primary: var(--primary-500);
+    --primary-foreground: var(--neutral-50);
+    
+    --secondary: var(--neutral-200);
+    --secondary-foreground: var(--neutral-900);
+    
+    --muted: var(--neutral-200);
+    --muted-foreground: var(--neutral-600);
+    
+    --accent: var(--neutral-200);
+    --accent-foreground: var(--neutral-900);
+    
+    --destructive: var(--destructive-500);
+    --destructive-foreground: var(--neutral-50);
+
+    --border: var(--neutral-300);
+    --input: var(--neutral-300);
+    --ring: var(--neutral-900);
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: var(--neutral-900);
+    --foreground: var(--neutral-50);
+    
+    --card: var(--neutral-800);
+    --card-foreground: var(--neutral-50);
+    
+    --popover: var(--neutral-800);
+    --popover-foreground: var(--neutral-50);
+    
+    --primary: var(--primary-400);
+    --primary-foreground: var(--neutral-900);
+    
+    --secondary: var(--neutral-800);
+    --secondary-foreground: var(--neutral-50);
+    
+    --muted: var(--neutral-800);
+    --muted-foreground: var(--neutral-400);
+    
+    --accent: var(--neutral-800);
+    --accent-foreground: var(--neutral-50);
+    
+    --destructive: var(--destructive-500);
+    --destructive-foreground: var(--neutral-50);
+    
+    --border: var(--neutral-700);
+    --input: var(--neutral-700);
+    --ring: var(--neutral-300);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
